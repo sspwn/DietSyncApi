@@ -1,0 +1,6 @@
+@DietSync.API_HostAddress = http://localhost:5259
+
+GET {{DietSync.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
