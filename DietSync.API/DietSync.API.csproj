@@ -10,4 +10,14 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DietSync.Application\DietSync.Application.csproj" />
+    <ProjectReference Include="..\DietSync.Core\DietSync.Core.csproj" />
+    <ProjectReference Include="..\DietSync.Infrastructure\DietSync.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
