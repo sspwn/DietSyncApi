@@ -1,6 +1,9 @@
-﻿namespace DietSync.Core.Repositories
+﻿using DietSync.Core.Entities;
+
+namespace DietSync.Core.Repositories
 {
-    public class IUserRepository
+    public interface IUserRepository
     {
+        Task<User?> GetById(int id);
     }
 }
