@@ -2,6 +2,23 @@
 {
     public class User
     {
+        public User(string name, string meta, string sexo, DateTime dataNasc, double peso, double altura, string email, string password)
+        {
+            Name = name;
+            Meta = meta;
+            Sexo = sexo;
+            DataNasc = dataNasc;
+            Peso = peso;
+            Altura = altura;
+            Email = email;
+            Password = password;
+
+            Treinos = [];
+            Dietas = [];
+            Receitas = [];
+            Evolucoes = [];
+        }
+
         public int Id { get; private set; }
         public string Name { get; private set; } = string.Empty;
         public string Meta { get; private set; } = string.Empty;
@@ -16,6 +33,23 @@
         public ICollection<Dieta> Dietas { get; set; }
         public ICollection<Receita> Receitas { get; set; }
         public ICollection<Evolucao> Evolucoes { get; set; }
+
+        public void UpdatePassword(string password)
+        {
+            Password = password;
+        }
+
+        public void Update(string name, string meta, string sexo, DateTime dataNasc, double peso, double altura, string email, string password)
+        {
+            Name = name;
+            Meta = meta;
+            Sexo = sexo;
+            DataNasc = dataNasc;
+            Peso = peso;
+            Altura = altura;
+            Email = email;
+            Password = password;
+        }
     }
 }
 

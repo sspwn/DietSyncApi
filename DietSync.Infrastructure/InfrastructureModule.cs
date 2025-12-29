@@ -35,6 +35,11 @@ namespace DietSync.Infrastructure
         private static IServiceCollection AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IDietaRepository, DietaRepository>();
+            services.AddScoped<IEvolucaoRepository, EvolucaoRepository>();
+            services.AddScoped<IReceitaRepository, ReceitaRepository>();
+            services.AddScoped<ITreinoRepository, TreinoRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }
